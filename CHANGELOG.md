@@ -2,6 +2,32 @@
 
 This document lists the changes introduced by this fork.
 
+## Version 4.1.0
+
+* Add Angular 21 support
+* Fix that a multi-select dropdown stays open when another multi-select drop-down is opened
+
+## Version 4.0.2
+
+* Fix that the new multiselect filter component always disregards a custom filter function
+* Fix that the `selectText` config was ineffective for the multiselect filter
+* Fix that the dropdown of the multiselect filter was not repositioned when the visual viewport changes
+* Fix that the font weight in the multiselect filter button was inconsistent to the font weights of other filter components
+
+## Version 4.0.1
+
+* Fix accidental removal of `sr-only` CSS class in the pager component
+* Fix wrong default for the multiselect filter's `clearButtonText`
+* Fix that the new multiselect filter dropdown overflows the viewport width when opened for a column that is close to the right edge of the viewport 
+
+## Version 4.0.0
+
+* Add multiselect filter component
+* Remove Angular 16 and Angular 17 support
+* Fix wrong name of selector `angular2-st-tbody-create-cancel` (it is now `angular2-st-tbody-save-cancel`)
+* Fix wrong name of selector `angular2-st-actions` (it is now `angular2-st-thead-create-cancel`)
+* You might need to adjust your stylesheet overrides according to the new selector names
+
 ## Version 3.8.0
 
 * Fix missing property `selectText` on `editor.config` for `select-editor` default non-value option
